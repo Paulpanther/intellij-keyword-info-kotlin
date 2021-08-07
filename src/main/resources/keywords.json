@@ -1,345 +1,354 @@
 [
   {
-    "name": "as (import)",
+    "name": "as",
     "elementType": "as",
-    "parentType": "IMPORT_ALIAS"
+    "parentType": "IMPORT_ALIAS",
+    "description": "is used for type casts",
+    "ref": "https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator"
   },
   {
-    "name": "as (cast)",
+    "name": "as",
     "elementType": "as",
-    "parentType": "OPERATION_REFERENCE"
+    "parentType": "OPERATION_REFERENCE",
+    "description": "specifies an alias for an import",
+    "ref": "https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator"
   },
   {
     "name": "as?",
-    "elementType": "AS_SAFE"
-  },
-  {
-    "name": "break",
-    "elementType": "break"
-  },
-  {
-    "name": "class",
-    "elementType": "class"
-  },
-  {
-    "name": "continue",
-    "elementType": "continue"
-  },
-  {
-    "name": "do",
-    "elementType": "do"
-  },
-  {
-    "name": "else",
-    "elementType": "else"
-  },
-  {
-    "name": "false",
-    "elementType": "false"
-  },
-  {
-    "name": "for",
-    "elementType": "for"
-  },
-  {
-    "name": "fun",
-    "elementType": "fun"
-  },
-  {
-    "name": "if",
-    "elementType": "if"
-  },
-  {
-    "name": "in",
-    "elementType": "in",
-    "parentType": "FOR"
-  },
-  {
-    "name": "in",
-    "elementType": "in",
-    "parentType": "OPERATION_REFERENCE"
-  },
-  {
-    "name": "in",
-    "elementType": "in",
-    "parentType": "MODIFIER_LIST"
-  },
-  {
-    "name": "in?",
-    "elementType": "NOT_IN"
-  },
-  {
-    "name": "interface",
-    "elementType": "interface"
-  },
-  {
-    "name": "is",
-    "elementType": "is"
-  },
-  {
-    "name": "is",
-    "elementType": "NOT_IS"
-  },
-  {
-    "name": "null",
-    "elementType": "null"
-  },
-  {
-    "name": "object",
-    "elementType": "object"
-  },
-  {
-    "name": "package",
-    "elementType": "package"
-  },
-  {
-    "name": "return",
-    "elementType": "return"
-  },
-  {
-    "name": "super",
-    "elementType": "super"
-  },
-  {
-    "name": "this",
-    "elementType": "this"
-  },
-  {
-    "name": "throw",
-    "elementType": "throw"
-  },
-  {
-    "name": "true",
-    "elementType": "true"
-  },
-  {
-    "name": "try",
-    "elementType": "try"
-  },
-  {
-    "name": "typealias",
-    "elementType": "typealias"
-  },
-  {
-    "name": "typeof",
-    "elementType": "typeof"
-  },
-  {
-    "name": "val",
-    "elementType": "val"
-  },
-  {
-    "name": "var",
-    "elementType": "var"
-  },
-  {
-    "name": "when",
-    "elementType": "when"
-  },
-  {
-    "name": "while",
-    "elementType": "while"
-  },
-  {
-    "name": "by",
-    "elementType": "by",
-    "parentType": "DELEGATE_SUPER_TYPE_ENTRY"
-  },
-  {
-    "name": "by",
-    "elementType": "by",
-    "parentType": "PROPERTY_DELEGATE"
-  },
-  {
-    "name": "catch",
-    "elementType": "catch"
-  },
-  {
-    "name": "constructor",
-    "elementType": "constructor"
-  },
-  {
-    "name": "delegate",
-    "elementType": "delegate"
-  },
-  {
-    "name": "dynamic",
-    "elementType": "dynamic"
-  },
-  {
-    "name": "field",
-    "elementType": "field"
-  },
-  {
-    "name": "file",
-    "elementType": "file"
-  },
-  {
-    "name": "finally",
-    "elementType": "finally"
-  },
-  {
-    "name": "get",
-    "elementType": "get",
-    "parentType": "PROPERTY_ACCESSOR"
-  },
-  {
-    "name": "get",
-    "elementType": "get",
-    "parentType": "ANNOTATION_TARGET"
-  },
-  {
-    "name": "import",
-    "elementType": "import"
-  },
-  {
-    "name": "init",
-    "elementType": "init"
-  },
-  {
-    "name": "param",
-    "elementType": "param"
-  },
-  {
-    "name": "property",
-    "elementType": "property"
-  },
-  {
-    "name": "receiver",
-    "elementType": "receiver"
-  },
-  {
-    "name": "set",
-    "elementType": "set",
-    "parentType": "PROPERTY_ACCESSOR"
-  },
-  {
-    "name": "set",
-    "elementType": "set",
-    "parentType": "ANNOTATION_TARGET"
-  },
-  {
-    "name": "setparam",
-    "elementType": "setparam"
-  },
-  {
-    "name": "value",
-    "elementType": "value"
-  },
-  {
-    "name": "where",
-    "elementType": "where"
-  },
-  {
-    "name": "actual",
-    "elementType": "actual"
-  },
-  {
-    "name": "abstract",
-    "elementType": "abstract"
-  },
-  {
-    "name": "annotation",
-    "elementType": "annotation"
-  },
-  {
-    "name": "companion",
-    "elementType": "companion"
-  },
-  {
-    "name": "const",
-    "elementType": "const"
-  },
-  {
-    "name": "crossinline",
-    "elementType": "crossinline"
-  },
-  {
-    "name": "data",
-    "elementType": "data"
-  },
-  {
-    "name": "enum",
-    "elementType": "enum"
-  },
-  {
-    "name": "expect",
-    "elementType": "expect"
-  },
-  {
-    "name": "external",
-    "elementType": "external"
-  },
-  {
-    "name": "final",
-    "elementType": "final"
-  },
-  {
-    "name": "infix",
-    "elementType": "infix"
-  },
-  {
-    "name": "inline",
-    "elementType": "inline"
-  },
-  {
-    "name": "inner",
-    "elementType": "inner"
-  },
-  {
-    "name": "internal",
-    "elementType": "internal"
-  },
-  {
-    "name": "lateinit",
-    "elementType": "lateinit"
-  },
-  {
-    "name": "noinline",
-    "elementType": "noinline"
-  },
-  {
-    "name": "open",
-    "elementType": "open"
-  },
-  {
-    "name": "operator",
-    "elementType": "operator"
-  },
-  {
-    "name": "out",
-    "elementType": "out"
-  },
-  {
-    "name": "override",
-    "elementType": "override"
-  },
-  {
-    "name": "private",
-    "elementType": "private"
-  },
-  {
-    "name": "public",
-    "elementType": "public"
-  },
-  {
-    "name": "reified",
-    "elementType": "reified"
-  },
-  {
-    "name": "sealed",
-    "elementType": "sealed"
-  },
-  {
-    "name": "suspend",
-    "elementType": "suspend"
-  },
-  {
-    "name": "tailrec",
-    "elementType": "tailrec"
-  },
-  {
-    "name": "vararg",
-    "elementType": "vararg"
+    "elementType": "AS_SAFE",
+    "ref": "https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator"
   }
+//  {
+//    "name": "break",
+//    "elementType": "break",
+//    "ref": ""
+//  },
+//  {
+//    "name": "class",
+//    "elementType": "class",
+//    "ref": ""
+//  },
+//  {
+//    "name": "continue",
+//    "elementType": "continue",
+//    "ref": ""
+//  },
+//  {
+//    "name": "do",
+//    "elementType": "do",
+//    "ref": ""
+//  },
+//  {
+//    "name": "else",
+//    "elementType": "else"
+//  },
+//  {
+//    "name": "false",
+//    "elementType": "false"
+//  },
+//  {
+//    "name": "for",
+//    "elementType": "for"
+//  },
+//  {
+//    "name": "fun",
+//    "elementType": "fun"
+//  },
+//  {
+//    "name": "if",
+//    "elementType": "if"
+//  },
+//  {
+//    "name": "in",
+//    "elementType": "in",
+//    "parentType": "FOR"
+//  },
+//  {
+//    "name": "in",
+//    "elementType": "in",
+//    "parentType": "OPERATION_REFERENCE"
+//  },
+//  {
+//    "name": "in",
+//    "elementType": "in",
+//    "parentType": "MODIFIER_LIST"
+//  },
+//  {
+//    "name": "in?",
+//    "elementType": "NOT_IN"
+//  },
+//  {
+//    "name": "interface",
+//    "elementType": "interface"
+//  },
+//  {
+//    "name": "is",
+//    "elementType": "is"
+//  },
+//  {
+//    "name": "is",
+//    "elementType": "NOT_IS"
+//  },
+//  {
+//    "name": "null",
+//    "elementType": "null"
+//  },
+//  {
+//    "name": "object",
+//    "elementType": "object"
+//  },
+//  {
+//    "name": "package",
+//    "elementType": "package"
+//  },
+//  {
+//    "name": "return",
+//    "elementType": "return"
+//  },
+//  {
+//    "name": "super",
+//    "elementType": "super"
+//  },
+//  {
+//    "name": "this",
+//    "elementType": "this"
+//  },
+//  {
+//    "name": "throw",
+//    "elementType": "throw"
+//  },
+//  {
+//    "name": "true",
+//    "elementType": "true"
+//  },
+//  {
+//    "name": "try",
+//    "elementType": "try"
+//  },
+//  {
+//    "name": "typealias",
+//    "elementType": "typealias"
+//  },
+//  {
+//    "name": "typeof",
+//    "elementType": "typeof"
+//  },
+//  {
+//    "name": "val",
+//    "elementType": "val"
+//  },
+//  {
+//    "name": "var",
+//    "elementType": "var"
+//  },
+//  {
+//    "name": "when",
+//    "elementType": "when"
+//  },
+//  {
+//    "name": "while",
+//    "elementType": "while"
+//  },
+//  {
+//    "name": "by",
+//    "elementType": "by",
+//    "parentType": "DELEGATE_SUPER_TYPE_ENTRY"
+//  },
+//  {
+//    "name": "by",
+//    "elementType": "by",
+//    "parentType": "PROPERTY_DELEGATE"
+//  },
+//  {
+//    "name": "catch",
+//    "elementType": "catch"
+//  },
+//  {
+//    "name": "constructor",
+//    "elementType": "constructor"
+//  },
+//  {
+//    "name": "delegate",
+//    "elementType": "delegate"
+//  },
+//  {
+//    "name": "dynamic",
+//    "elementType": "dynamic"
+//  },
+//  {
+//    "name": "field",
+//    "elementType": "field"
+//  },
+//  {
+//    "name": "file",
+//    "elementType": "file"
+//  },
+//  {
+//    "name": "finally",
+//    "elementType": "finally"
+//  },
+//  {
+//    "name": "get",
+//    "elementType": "get",
+//    "parentType": "PROPERTY_ACCESSOR"
+//  },
+//  {
+//    "name": "get",
+//    "elementType": "get",
+//    "parentType": "ANNOTATION_TARGET"
+//  },
+//  {
+//    "name": "import",
+//    "elementType": "import"
+//  },
+//  {
+//    "name": "init",
+//    "elementType": "init"
+//  },
+//  {
+//    "name": "param",
+//    "elementType": "param"
+//  },
+//  {
+//    "name": "property",
+//    "elementType": "property"
+//  },
+//  {
+//    "name": "receiver",
+//    "elementType": "receiver"
+//  },
+//  {
+//    "name": "set",
+//    "elementType": "set",
+//    "parentType": "PROPERTY_ACCESSOR"
+//  },
+//  {
+//    "name": "set",
+//    "elementType": "set",
+//    "parentType": "ANNOTATION_TARGET"
+//  },
+//  {
+//    "name": "setparam",
+//    "elementType": "setparam"
+//  },
+//  {
+//    "name": "value",
+//    "elementType": "value"
+//  },
+//  {
+//    "name": "where",
+//    "elementType": "where"
+//  },
+//  {
+//    "name": "actual",
+//    "elementType": "actual"
+//  },
+//  {
+//    "name": "abstract",
+//    "elementType": "abstract"
+//  },
+//  {
+//    "name": "annotation",
+//    "elementType": "annotation"
+//  },
+//  {
+//    "name": "companion",
+//    "elementType": "companion"
+//  },
+//  {
+//    "name": "const",
+//    "elementType": "const"
+//  },
+//  {
+//    "name": "crossinline",
+//    "elementType": "crossinline"
+//  },
+//  {
+//    "name": "data",
+//    "elementType": "data"
+//  },
+//  {
+//    "name": "enum",
+//    "elementType": "enum"
+//  },
+//  {
+//    "name": "expect",
+//    "elementType": "expect"
+//  },
+//  {
+//    "name": "external",
+//    "elementType": "external"
+//  },
+//  {
+//    "name": "final",
+//    "elementType": "final"
+//  },
+//  {
+//    "name": "infix",
+//    "elementType": "infix"
+//  },
+//  {
+//    "name": "inline",
+//    "elementType": "inline"
+//  },
+//  {
+//    "name": "inner",
+//    "elementType": "inner"
+//  },
+//  {
+//    "name": "internal",
+//    "elementType": "internal"
+//  },
+//  {
+//    "name": "lateinit",
+//    "elementType": "lateinit"
+//  },
+//  {
+//    "name": "noinline",
+//    "elementType": "noinline"
+//  },
+//  {
+//    "name": "open",
+//    "elementType": "open"
+//  },
+//  {
+//    "name": "operator",
+//    "elementType": "operator"
+//  },
+//  {
+//    "name": "out",
+//    "elementType": "out"
+//  },
+//  {
+//    "name": "override",
+//    "elementType": "override"
+//  },
+//  {
+//    "name": "private",
+//    "elementType": "private"
+//  },
+//  {
+//    "name": "public",
+//    "elementType": "public"
+//  },
+//  {
+//    "name": "reified",
+//    "elementType": "reified"
+//  },
+//  {
+//    "name": "sealed",
+//    "elementType": "sealed"
+//  },
+//  {
+//    "name": "suspend",
+//    "elementType": "suspend"
+//  },
+//  {
+//    "name": "tailrec",
+//    "elementType": "tailrec"
+//  },
+//  {
+//    "name": "vararg",
+//    "elementType": "vararg"
+//  }
 ]
