@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
-data class Keyword(val name: String, val elementType: String)
+data class Keyword(val name: String, val elementType: String, val parentType: String?)
 
 class Keywords {
     private val values: List<Keyword>
@@ -22,6 +22,10 @@ class Keywords {
     }
 
     fun findKeyword(element: PsiElement): Keyword? {
-        return values.find { it.elementType == element.elementType?.toString() }
+        return values.find {
+            val elementType = element.elementType?.toString()
+            val parentType = element.parent.elementType?.toString()
+            it.elementType == elementType && (it.parentType == null || it.parentType == parentType)
+        }
     }
 }

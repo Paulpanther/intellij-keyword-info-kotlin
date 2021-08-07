@@ -1,7 +1,13 @@
 [
   {
-    "name": "as",
-    "elementType": "as"
+    "name": "as (import)",
+    "elementType": "as",
+    "parentType": "IMPORT_ALIAS"
+  },
+  {
+    "name": "as (cast)",
+    "elementType": "as",
+    "parentType": "OPERATION_REFERENCE"
   },
   {
     "name": "as?",
@@ -45,7 +51,18 @@
   },
   {
     "name": "in",
-    "elementType": "in"
+    "elementType": "in",
+    "parentType": "FOR"
+  },
+  {
+    "name": "in",
+    "elementType": "in",
+    "parentType": "OPERATION_REFERENCE"
+  },
+  {
+    "name": "in",
+    "elementType": "in",
+    "parentType": "MODIFIER_LIST"
   },
   {
     "name": "in?",
@@ -125,7 +142,13 @@
   },
   {
     "name": "by",
-    "elementType": "by"
+    "elementType": "by",
+    "parentType": "DELEGATE_SUPER_TYPE_ENTRY"
+  },
+  {
+    "name": "by",
+    "elementType": "by",
+    "parentType": "PROPERTY_DELEGATE"
   },
   {
     "name": "catch",
@@ -157,7 +180,13 @@
   },
   {
     "name": "get",
-    "elementType": "get"
+    "elementType": "get",
+    "parentType": "PROPERTY_ACCESSOR"
+  },
+  {
+    "name": "get",
+    "elementType": "get",
+    "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "import",
@@ -181,7 +210,13 @@
   },
   {
     "name": "set",
-    "elementType": "set"
+    "elementType": "set",
+    "parentType": "PROPERTY_ACCESSOR"
+  },
+  {
+    "name": "set",
+    "elementType": "set",
+    "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "setparam",
