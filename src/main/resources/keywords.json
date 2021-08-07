@@ -1,354 +1,399 @@
 [
   {
     "name": "as",
+    "description": "<code>as</code> specifies an <a href=\"https://kotlinlang.org/docs/packages.html#imports\">alias for an import</a>",
     "elementType": "as",
-    "parentType": "IMPORT_ALIAS",
-    "description": "is used for type casts",
-    "ref": "https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator"
+    "parentType": "IMPORT_ALIAS"
   },
   {
     "name": "as",
+    "description": "<code>as</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator\">type casts</a>",
     "elementType": "as",
-    "parentType": "OPERATION_REFERENCE",
-    "description": "specifies an alias for an import",
-    "ref": "https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator"
+    "parentType": "OPERATION_REFERENCE"
   },
   {
     "name": "as?",
-    "elementType": "AS_SAFE",
-    "ref": "https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator"
+    "description": "<code>as?</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator\">safe type casts</a>",
+    "elementType": "as?"
+  },
+  {
+    "name": "break",
+    "description": "<code>break</code> <a href=\"https://kotlinlang.org/docs/returns.html\">terminates the execution of a loop</a>",
+    "elementType": "break"
+  },
+  {
+    "name": "class",
+    "description": "<code>class</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html\">class</a>",
+    "elementType": "class"
+  },
+  {
+    "name": "continue",
+    "description": "<code>continue</code> <a href=\"https://kotlinlang.org/docs/returns.html\">proceeds to the next step of the nearest enclosing loop</a>",
+    "elementType": "continue"
+  },
+  {
+    "name": "do",
+    "description": "<code>do</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">do/while loop</a> (loop with postcondition)",
+    "elementType": "do"
+  },
+  {
+    "name": "else",
+    "description": "<code>else</code> defines the branch of an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a> which is executed when the condition is false",
+    "elementType": "else"
+  },
+  {
+    "name": "false",
+    "description": "<code>false</code> specifies the 'false' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "elementType": "false"
+  },
+  {
+    "name": "for",
+    "description": "<code>for</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
+    "elementType": "for"
+  },
+  {
+    "name": "fun",
+    "description": "<code>fun</code> declares a <a href=\"https://kotlinlang.org/docs/functions.html\">function</a>",
+    "elementType": "fun"
+  },
+  {
+    "name": "if",
+    "description": "<code>if</code> begins an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a>",
+    "elementType": "if"
+  },
+  {
+    "name": "in",
+    "description": "<code>in</code>",
+    "elementType": "in"
+  },
+  {
+    "name": "!in",
+    "description": "<code>!in</code>",
+    "elementType": "!in"
+  },
+  {
+    "name": "interface",
+    "description": "<code>interface</code> declares an <a href=\"https://kotlinlang.org/docs/interfaces.html\">interface</a>",
+    "elementType": "interface"
+  },
+  {
+    "name": "is",
+    "description": "<code>is</code>",
+    "elementType": "is"
+  },
+  {
+    "name": "!is",
+    "description": "<code>!is</code>",
+    "elementType": "!is"
+  },
+  {
+    "name": "null",
+    "description": "<code>null</code> is a constant representing an object reference that doesn't point to any object",
+    "elementType": "null"
+  },
+  {
+    "name": "object",
+    "description": "<code>object</code> declares <a href=\"https://kotlinlang.org/docs/object-declarations.html\">a class and its instance at the same time</a>",
+    "elementType": "object"
+  },
+  {
+    "name": "package",
+    "description": "<code>package</code> specifies the <a href=\"https://kotlinlang.org/docs/packages.html\">package for the current file</a>",
+    "elementType": "package"
+  },
+  {
+    "name": "return",
+    "description": "<code>return</code> <a href=\"https://kotlinlang.org/docs/returns.html\">returns from the nearest enclosing function or anonymous function</a>",
+    "elementType": "return"
+  },
+  {
+    "name": "super",
+    "description": "<code>super</code>",
+    "elementType": "super"
+  },
+  {
+    "name": "this",
+    "description": "<code>this</code>",
+    "elementType": "this"
+  },
+  {
+    "name": "throw",
+    "description": "<code>throw</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">throws an exception</a>",
+    "elementType": "throw"
+  },
+  {
+    "name": "true",
+    "description": "<code>true</code> specifies the 'true' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "elementType": "true"
+  },
+  {
+    "name": "try",
+    "description": "<code>try</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">begins an exception handling block</a>",
+    "elementType": "try"
+  },
+  {
+    "name": "typealias",
+    "description": "<code>typealias</code> declares a <a href=\"https://kotlinlang.org/docs/type-aliases.html\">type alias</a>",
+    "elementType": "typealias"
+  },
+  {
+    "name": "typeof",
+    "description": "<code>typeof</code> reserved for future use",
+    "elementType": "typeof"
+  },
+  {
+    "name": "val",
+    "description": "<code>val</code> declares a read-only <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "elementType": "val"
+  },
+  {
+    "name": "var",
+    "description": "<code>var</code> declares a mutable <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "elementType": "var"
+  },
+  {
+    "name": "when",
+    "description": "<code>when</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#when-expression\">when expression</a> (executes one of the given branches)",
+    "elementType": "when"
+  },
+  {
+    "name": "while",
+    "description": "<code>while</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">while loop</a> (loop with precondition)",
+    "elementType": "while"
+  },
+  {
+    "name": "by",
+    "description": "<code>by</code>",
+    "elementType": "by"
+  },
+  {
+    "name": "catch",
+    "description": "<code>catch</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">handles a specific exception type</a>",
+    "elementType": "catch"
+  },
+  {
+    "name": "constructor",
+    "description": "<code>constructor</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">primary or secondary constructor</a>",
+    "elementType": "constructor"
+  },
+  {
+    "name": "delegate",
+    "description": "<code>delegate</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "delegate"
+  },
+  {
+    "name": "dynamic",
+    "description": "<code>dynamic</code> references a <a href=\"https://kotlinlang.org/docs/dynamic-type.html\">dynamic type</a> in Kotlin/JS code",
+    "elementType": "dynamic"
+  },
+  {
+    "name": "field",
+    "description": "<code>field</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "field"
+  },
+  {
+    "name": "file",
+    "description": "<code>file</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "file"
+  },
+  {
+    "name": "finally",
+    "description": "<code>finally</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">is always executed when a try block exits</a>",
+    "elementType": "finally"
+  },
+  {
+    "name": "get",
+    "description": "<code>get</code>",
+    "elementType": "get"
+  },
+  {
+    "name": "import",
+    "description": "<code>import</code> <a href=\"https://kotlinlang.org/docs/packages.html\">imports a declaration from another package into the current file</a>",
+    "elementType": "import"
+  },
+  {
+    "name": "init",
+    "description": "<code>init</code> begins an <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">initializer block</a>",
+    "elementType": "init"
+  },
+  {
+    "name": "param",
+    "description": "<code>param</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "param"
+  },
+  {
+    "name": "property",
+    "description": "<code>property</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "property"
+  },
+  {
+    "name": "receiver",
+    "description": "<code>receiver</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "receiver"
+  },
+  {
+    "name": "set",
+    "description": "<code>set</code>",
+    "elementType": "set"
+  },
+  {
+    "name": "setparam",
+    "description": "<code>setparam</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "setparam"
+  },
+  {
+    "name": "class",
+    "description": "<code>value</code> with the <code>class</code> keyword declares an <a href=\"https://kotlinlang.org/docs/inline-classes.html\">inline class</a>",
+    "elementType": "class"
+  },
+  {
+    "name": "where",
+    "description": "<code>where</code> specifies <a href=\"https://kotlinlang.org/docs/generics.html#upper-bounds\">constraints for a generic type parameter</a>",
+    "elementType": "where"
+  },
+  {
+    "name": "actual",
+    "description": "<code>actual</code> denotes a platform-specific implementation in <a href=\"https://kotlinlang.org/docs/multiplatform.html\">multiplatform projects</a>",
+    "elementType": "actual"
+  },
+  {
+    "name": "abstract",
+    "description": "<code>abstract</code> marks a class or member as <a href=\"https://kotlinlang.org/docs/classes.html#abstract-classes\">abstract</a>",
+    "elementType": "abstract"
+  },
+  {
+    "name": "annotation",
+    "description": "<code>annotation</code> declares an <a href=\"https://kotlinlang.org/docs/annotations.html\">annotation class</a>",
+    "elementType": "annotation"
+  },
+  {
+    "name": "companion",
+    "description": "<code>companion</code> declares a <a href=\"https://kotlinlang.org/docs/object-declarations.html#companion-objects\">companion object</a>",
+    "elementType": "companion"
+  },
+  {
+    "name": "const",
+    "description": "<code>const</code> marks a property as a <a href=\"https://kotlinlang.org/docs/properties.html#compile-time-constants\">compile-time constant</a>",
+    "elementType": "const"
+  },
+  {
+    "name": "crossinline",
+    "description": "<code>crossinline</code> forbids <a href=\"https://kotlinlang.org/docs/inline-functions.html#non-local-returns\">non-local returns in a lambda passed to an inline function</a>",
+    "elementType": "crossinline"
+  },
+  {
+    "name": "data",
+    "description": "<code>data</code> instructs the compiler to <a href=\"https://kotlinlang.org/docs/data-classes.html\">generate canonical members for a class</a>",
+    "elementType": "data"
+  },
+  {
+    "name": "enum",
+    "description": "<code>enum</code> declares an <a href=\"https://kotlinlang.org/docs/enum-classes.html\">enumeration</a>",
+    "elementType": "enum"
+  },
+  {
+    "name": "expect",
+    "description": "<code>expect</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/multiplatform.html\">platform-specific</a>, expecting an implementation in platform modules.",
+    "elementType": "expect"
+  },
+  {
+    "name": "external",
+    "description": "<code>external</code> marks a declaration as implemented not in Kotlin (accessible through <a href=\"https://kotlinlang.org/docs/java-interop.html#using-jni-with-kotlin\">JNI</a> or in <a href=\"https://kotlinlang.org/docs/js-interop.html#external-modifier\">JavaScript</a>)",
+    "elementType": "external"
+  },
+  {
+    "name": "final",
+    "description": "<code>final</code> forbids <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">overriding a member</a>",
+    "elementType": "final"
+  },
+  {
+    "name": "infix",
+    "description": "<code>infix</code> allows calling a function in <a href=\"https://kotlinlang.org/docs/functions.html#infix-notation\">infix notation</a>",
+    "elementType": "infix"
+  },
+  {
+    "name": "inline",
+    "description": "<code>inline</code> tells the compiler to <a href=\"https://kotlinlang.org/docs/inline-functions.html\">inline the function and the lambdas passed to it at the call site</a>",
+    "elementType": "inline"
+  },
+  {
+    "name": "inner",
+    "description": "<code>inner</code> allows referring to the outer class instance from a <a href=\"https://kotlinlang.org/docs/nested-classes.html\">nested class</a>",
+    "elementType": "inner"
+  },
+  {
+    "name": "internal",
+    "description": "<code>internal</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current module</a>",
+    "elementType": "internal"
+  },
+  {
+    "name": "lateinit",
+    "description": "<code>lateinit</code> allows initializing a <a href=\"https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables\">non-null property outside of a constructor</a>",
+    "elementType": "lateinit"
+  },
+  {
+    "name": "noinline",
+    "description": "<code>noinline</code> turns off <a href=\"https://kotlinlang.org/docs/inline-functions.html#noinline\">inlining of a lambda passed to an inline function</a>",
+    "elementType": "noinline"
+  },
+  {
+    "name": "open",
+    "description": "<code>open</code> allows <a href=\"https://kotlinlang.org/docs/classes.html#inheritance\">subclassing a class or overriding a member</a>",
+    "elementType": "open"
+  },
+  {
+    "name": "operator",
+    "description": "<code>operator</code> marks a function as <a href=\"https://kotlinlang.org/docs/operator-overloading.html\">overloading an operator or implementing a convention</a>",
+    "elementType": "operator"
+  },
+  {
+    "name": "out",
+    "description": "<code>out</code> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">covariant</a>",
+    "elementType": "out"
+  },
+  {
+    "name": "override",
+    "description": "<code>override</code> marks a member as an <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">override of a superclass member</a>",
+    "elementType": "override"
+  },
+  {
+    "name": "private",
+    "description": "<code>private</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class or file</a>",
+    "elementType": "private"
+  },
+  {
+    "name": "protected",
+    "description": "<code>protected</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class and its subclasses</a>",
+    "elementType": "protected"
+  },
+  {
+    "name": "public",
+    "description": "<code>public</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible anywhere</a>",
+    "elementType": "public"
+  },
+  {
+    "name": "reified",
+    "description": "<code>reified</code> marks a type parameter of an inline function as <a href=\"https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters\">accessible at runtime</a>",
+    "elementType": "reified"
+  },
+  {
+    "name": "sealed",
+    "description": "<code>sealed</code> declares a <a href=\"https://kotlinlang.org/docs/sealed-classes.html\">sealed class</a> (a class with restricted subclassing)",
+    "elementType": "sealed"
+  },
+  {
+    "name": "suspend",
+    "description": "<code>suspend</code> marks a function or lambda as suspending (usable as a <a href=\"https://kotlinlang.org/docs/coroutines-overview.html\">coroutine</a>)",
+    "elementType": "suspend"
+  },
+  {
+    "name": "tailrec",
+    "description": "<code>tailrec</code> marks a function as <a href=\"https://kotlinlang.org/docs/functions.html#tail-recursive-functions\">tail-recursive</a> (allowing the compiler to replace recursion with iteration)",
+    "elementType": "tailrec"
+  },
+  {
+    "name": "vararg",
+    "description": "<code>vararg</code> allows <a href=\"https://kotlinlang.org/docs/functions.html#variable-number-of-arguments-varargs\">passing a variable number of arguments for a parameter</a>",
+    "elementType": "vararg"
   }
-//  {
-//    "name": "break",
-//    "elementType": "break",
-//    "ref": ""
-//  },
-//  {
-//    "name": "class",
-//    "elementType": "class",
-//    "ref": ""
-//  },
-//  {
-//    "name": "continue",
-//    "elementType": "continue",
-//    "ref": ""
-//  },
-//  {
-//    "name": "do",
-//    "elementType": "do",
-//    "ref": ""
-//  },
-//  {
-//    "name": "else",
-//    "elementType": "else"
-//  },
-//  {
-//    "name": "false",
-//    "elementType": "false"
-//  },
-//  {
-//    "name": "for",
-//    "elementType": "for"
-//  },
-//  {
-//    "name": "fun",
-//    "elementType": "fun"
-//  },
-//  {
-//    "name": "if",
-//    "elementType": "if"
-//  },
-//  {
-//    "name": "in",
-//    "elementType": "in",
-//    "parentType": "FOR"
-//  },
-//  {
-//    "name": "in",
-//    "elementType": "in",
-//    "parentType": "OPERATION_REFERENCE"
-//  },
-//  {
-//    "name": "in",
-//    "elementType": "in",
-//    "parentType": "MODIFIER_LIST"
-//  },
-//  {
-//    "name": "in?",
-//    "elementType": "NOT_IN"
-//  },
-//  {
-//    "name": "interface",
-//    "elementType": "interface"
-//  },
-//  {
-//    "name": "is",
-//    "elementType": "is"
-//  },
-//  {
-//    "name": "is",
-//    "elementType": "NOT_IS"
-//  },
-//  {
-//    "name": "null",
-//    "elementType": "null"
-//  },
-//  {
-//    "name": "object",
-//    "elementType": "object"
-//  },
-//  {
-//    "name": "package",
-//    "elementType": "package"
-//  },
-//  {
-//    "name": "return",
-//    "elementType": "return"
-//  },
-//  {
-//    "name": "super",
-//    "elementType": "super"
-//  },
-//  {
-//    "name": "this",
-//    "elementType": "this"
-//  },
-//  {
-//    "name": "throw",
-//    "elementType": "throw"
-//  },
-//  {
-//    "name": "true",
-//    "elementType": "true"
-//  },
-//  {
-//    "name": "try",
-//    "elementType": "try"
-//  },
-//  {
-//    "name": "typealias",
-//    "elementType": "typealias"
-//  },
-//  {
-//    "name": "typeof",
-//    "elementType": "typeof"
-//  },
-//  {
-//    "name": "val",
-//    "elementType": "val"
-//  },
-//  {
-//    "name": "var",
-//    "elementType": "var"
-//  },
-//  {
-//    "name": "when",
-//    "elementType": "when"
-//  },
-//  {
-//    "name": "while",
-//    "elementType": "while"
-//  },
-//  {
-//    "name": "by",
-//    "elementType": "by",
-//    "parentType": "DELEGATE_SUPER_TYPE_ENTRY"
-//  },
-//  {
-//    "name": "by",
-//    "elementType": "by",
-//    "parentType": "PROPERTY_DELEGATE"
-//  },
-//  {
-//    "name": "catch",
-//    "elementType": "catch"
-//  },
-//  {
-//    "name": "constructor",
-//    "elementType": "constructor"
-//  },
-//  {
-//    "name": "delegate",
-//    "elementType": "delegate"
-//  },
-//  {
-//    "name": "dynamic",
-//    "elementType": "dynamic"
-//  },
-//  {
-//    "name": "field",
-//    "elementType": "field"
-//  },
-//  {
-//    "name": "file",
-//    "elementType": "file"
-//  },
-//  {
-//    "name": "finally",
-//    "elementType": "finally"
-//  },
-//  {
-//    "name": "get",
-//    "elementType": "get",
-//    "parentType": "PROPERTY_ACCESSOR"
-//  },
-//  {
-//    "name": "get",
-//    "elementType": "get",
-//    "parentType": "ANNOTATION_TARGET"
-//  },
-//  {
-//    "name": "import",
-//    "elementType": "import"
-//  },
-//  {
-//    "name": "init",
-//    "elementType": "init"
-//  },
-//  {
-//    "name": "param",
-//    "elementType": "param"
-//  },
-//  {
-//    "name": "property",
-//    "elementType": "property"
-//  },
-//  {
-//    "name": "receiver",
-//    "elementType": "receiver"
-//  },
-//  {
-//    "name": "set",
-//    "elementType": "set",
-//    "parentType": "PROPERTY_ACCESSOR"
-//  },
-//  {
-//    "name": "set",
-//    "elementType": "set",
-//    "parentType": "ANNOTATION_TARGET"
-//  },
-//  {
-//    "name": "setparam",
-//    "elementType": "setparam"
-//  },
-//  {
-//    "name": "value",
-//    "elementType": "value"
-//  },
-//  {
-//    "name": "where",
-//    "elementType": "where"
-//  },
-//  {
-//    "name": "actual",
-//    "elementType": "actual"
-//  },
-//  {
-//    "name": "abstract",
-//    "elementType": "abstract"
-//  },
-//  {
-//    "name": "annotation",
-//    "elementType": "annotation"
-//  },
-//  {
-//    "name": "companion",
-//    "elementType": "companion"
-//  },
-//  {
-//    "name": "const",
-//    "elementType": "const"
-//  },
-//  {
-//    "name": "crossinline",
-//    "elementType": "crossinline"
-//  },
-//  {
-//    "name": "data",
-//    "elementType": "data"
-//  },
-//  {
-//    "name": "enum",
-//    "elementType": "enum"
-//  },
-//  {
-//    "name": "expect",
-//    "elementType": "expect"
-//  },
-//  {
-//    "name": "external",
-//    "elementType": "external"
-//  },
-//  {
-//    "name": "final",
-//    "elementType": "final"
-//  },
-//  {
-//    "name": "infix",
-//    "elementType": "infix"
-//  },
-//  {
-//    "name": "inline",
-//    "elementType": "inline"
-//  },
-//  {
-//    "name": "inner",
-//    "elementType": "inner"
-//  },
-//  {
-//    "name": "internal",
-//    "elementType": "internal"
-//  },
-//  {
-//    "name": "lateinit",
-//    "elementType": "lateinit"
-//  },
-//  {
-//    "name": "noinline",
-//    "elementType": "noinline"
-//  },
-//  {
-//    "name": "open",
-//    "elementType": "open"
-//  },
-//  {
-//    "name": "operator",
-//    "elementType": "operator"
-//  },
-//  {
-//    "name": "out",
-//    "elementType": "out"
-//  },
-//  {
-//    "name": "override",
-//    "elementType": "override"
-//  },
-//  {
-//    "name": "private",
-//    "elementType": "private"
-//  },
-//  {
-//    "name": "public",
-//    "elementType": "public"
-//  },
-//  {
-//    "name": "reified",
-//    "elementType": "reified"
-//  },
-//  {
-//    "name": "sealed",
-//    "elementType": "sealed"
-//  },
-//  {
-//    "name": "suspend",
-//    "elementType": "suspend"
-//  },
-//  {
-//    "name": "tailrec",
-//    "elementType": "tailrec"
-//  },
-//  {
-//    "name": "vararg",
-//    "elementType": "vararg"
-//  }
 ]

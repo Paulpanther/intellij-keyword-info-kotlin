@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
-data class Keyword(val name: String, val elementType: String, val parentType: String?)
+data class Keyword(val name: String, val description: String, val elementType: String?, val parentType: String?)
 
 class Keywords {
     private val values: List<Keyword>

@@ -10,7 +10,7 @@ import org.jetbrains.kotlin.idea.KotlinLanguage
 class KeywordDocumentationProvider: DocumentationProvider {
     override fun generateDoc(element: PsiElement, originalElement: PsiElement?): String? {
         val keyword = service<KeywordService>().keywords.findKeyword(element) ?: return null
-        return keyword.name
+        return keyword.description
     }
 
     override fun getCustomDocumentationElement(editor: Editor, file: PsiFile, contextElement: PsiElement?, targetOffset: Int): PsiElement? {
