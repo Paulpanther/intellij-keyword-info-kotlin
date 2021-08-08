@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# intellij-keywords-info-kotlin Changelog
+# intellij-keyword-info-kotlin Changelog
 
 ## [Unreleased]
 ### Added

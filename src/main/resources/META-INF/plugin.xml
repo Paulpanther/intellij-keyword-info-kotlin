@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.paulmethfessel.intellij-keywords-info-kotlin</id>
-    <name>Keywords Info for Kotlin</name>
+    <id>com.paulmethfessel.intellij-keyword-info-kotlin</id>
+    <name>Keyword Info for Kotlin</name>
     <vendor>Paul Methfessel</vendor>
 
     <depends>com.intellij.modules.platform</depends>

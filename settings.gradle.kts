@@ -1,1 +1,1 @@
-rootProject.name = "Keywords Info for Kotlin"
+rootProject.name = "Keyword Info for Kotlin"
