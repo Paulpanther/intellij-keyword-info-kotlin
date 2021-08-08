@@ -2,6 +2,7 @@
 
 # intellij-keyword-info-kotlin Changelog
 
-## [Unreleased]
+## [1.0.0] - 2021-08-08
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Info for Hover and <code>Ctrl-Q</code>
+- Support for all keywords from https://kotlinlang.org/docs/keyword-reference.html as of 2021-08-08
