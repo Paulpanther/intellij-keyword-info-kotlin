@@ -1,8 +1,8 @@
 # Keyword Info for Kotlin
 
 ![Build](https://github.com/Paulpanther/intellij-keyword-info-kotlin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/17369-keyword-info-for-kotlin.svg)](https://plugins.jetbrains.com/plugin/17369-keyword-info-for-kotlin)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/17369-keyword-info-for-kotlin.svg)](https://plugins.jetbrains.com/plugin/17369-keyword-info-for-kotlin)
 
 ## Template ToDo list
 - [x] Create a new [IntelliJ Platform Plugin Template][template] project.
