@@ -3,12 +3,14 @@ package com.paulmethfessel.kik
 import com.google.gson.Gson
 import com.google.gson.JsonSyntaxException
 import com.google.gson.reflect.TypeToken
+import com.intellij.openapi.components.Service
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
 data class Keyword(val name: String, val description: String, val elementType: String?, val parentType: String?)
 
-class Keywords {
+@Service
+class KeywordService {
     private val values: List<Keyword>
 
     init {

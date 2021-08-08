@@ -7,7 +7,7 @@
     <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.paulmethfessel.kik.ide.KeywordService" id="com.paulmethfessel.kik.ide.KeywordService"/>
-        <documentationProvider implementation="com.paulmethfessel.kik.ide.KeywordDocumentationProvider" id="com.paulmethfessel.kik.ide.KeywordDocumentationProvider"/>
+        <applicationService serviceImplementation="com.paulmethfessel.kik.KeywordService" id="com.paulmethfessel.kik.KeywordService"/>
+        <documentationProvider implementation="com.paulmethfessel.kik.KeywordDocumentationProvider" id="com.paulmethfessel.kik.KeywordDocumentationProvider"/>
     </extensions>
 </idea-plugin>

@@ -1,399 +1,433 @@
 [
   {
     "name": "as",
-    "description": "<code>as</code> specifies an <a href=\"https://kotlinlang.org/docs/packages.html#imports\">alias for an import</a>",
+    "description": "<strong>as</strong> specifies an <a href=\"https://kotlinlang.org/docs/packages.html#imports\">alias for an import</a>",
     "elementType": "as",
     "parentType": "IMPORT_ALIAS"
   },
   {
     "name": "as",
-    "description": "<code>as</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator\">type casts</a>",
+    "description": "<strong>as</strong> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator\">type casts</a>",
     "elementType": "as",
     "parentType": "OPERATION_REFERENCE"
   },
   {
     "name": "as?",
-    "description": "<code>as?</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator\">safe type casts</a>",
-    "elementType": "as?"
+    "description": "<strong>as?</strong> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator\">safe type casts</a>",
+    "elementType": "AS_SAFE"
   },
   {
     "name": "break",
-    "description": "<code>break</code> <a href=\"https://kotlinlang.org/docs/returns.html\">terminates the execution of a loop</a>",
+    "description": "<strong>break</strong> <a href=\"https://kotlinlang.org/docs/returns.html\">terminates the execution of a loop</a>",
     "elementType": "break"
   },
   {
     "name": "class",
-    "description": "<code>class</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html\">class</a>",
+    "description": "<strong>class</strong> declares a <a href=\"https://kotlinlang.org/docs/classes.html\">class</a>",
     "elementType": "class"
   },
   {
     "name": "continue",
-    "description": "<code>continue</code> <a href=\"https://kotlinlang.org/docs/returns.html\">proceeds to the next step of the nearest enclosing loop</a>",
+    "description": "<strong>continue</strong> <a href=\"https://kotlinlang.org/docs/returns.html\">proceeds to the next step of the nearest enclosing loop</a>",
     "elementType": "continue"
   },
   {
     "name": "do",
-    "description": "<code>do</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">do/while loop</a> (loop with postcondition)",
+    "description": "<strong>do</strong> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">do/while loop</a> (loop with postcondition)",
     "elementType": "do"
   },
   {
     "name": "else",
-    "description": "<code>else</code> defines the branch of an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a> which is executed when the condition is false",
+    "description": "<strong>else</strong> defines the branch of an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a> which is executed when the condition is false",
     "elementType": "else"
   },
   {
     "name": "false",
-    "description": "<code>false</code> specifies the 'false' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "description": "<strong>false</strong> specifies the 'false' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
     "elementType": "false"
   },
   {
     "name": "for",
-    "description": "<code>for</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
+    "description": "<strong>for</strong> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
     "elementType": "for"
   },
   {
     "name": "fun",
-    "description": "<code>fun</code> declares a <a href=\"https://kotlinlang.org/docs/functions.html\">function</a>",
+    "description": "<strong>fun</strong> declares a <a href=\"https://kotlinlang.org/docs/functions.html\">function</a>",
     "elementType": "fun"
   },
   {
     "name": "if",
-    "description": "<code>if</code> begins an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a>",
+    "description": "<strong>if</strong> begins an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a>",
     "elementType": "if"
   },
   {
     "name": "in",
-    "description": "<code>in</code>",
-    "elementType": "in"
+    "description": "<strong>in</strong> specifies the object being iterated in a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
+    "elementType": "in",
+    "parentType": "FOR"
+  },
+  {
+    "name": "in",
+    "description": "<strong>in</strong> is used as an infix operator to check that a value belongs to <a href=\"https://kotlinlang.org/docs/ranges.html\">a range</a>, a collection or another entity that <a href=\"https://kotlinlang.org/docs/operator-overloading.html#in-operator\">defines the 'contains' method</a>",
+    "elementType": "in",
+    "parentType": "OPERATION_REFERENCE"
+  },
+  {
+    "name": "in",
+    "description": "<strong>in</strong> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">contravariant</a>",
+    "elementType": "in",
+    "parentType": "MODIFIER_LIST"
   },
   {
     "name": "!in",
-    "description": "<code>!in</code>",
-    "elementType": "!in"
+    "description": "<strong>!in</strong>",
+    "elementType": "NOT_IN"
   },
   {
     "name": "interface",
-    "description": "<code>interface</code> declares an <a href=\"https://kotlinlang.org/docs/interfaces.html\">interface</a>",
+    "description": "<strong>interface</strong> declares an <a href=\"https://kotlinlang.org/docs/interfaces.html\">interface</a>",
     "elementType": "interface"
   },
   {
     "name": "is",
-    "description": "<code>is</code>",
+    "description": "<strong>is</strong>",
     "elementType": "is"
   },
   {
     "name": "!is",
-    "description": "<code>!is</code>",
-    "elementType": "!is"
+    "description": "<strong>!is</strong>",
+    "elementType": "NOT_IS"
   },
   {
     "name": "null",
-    "description": "<code>null</code> is a constant representing an object reference that doesn't point to any object",
+    "description": "<strong>null</strong> is a constant representing an object reference that doesn't point to any object",
     "elementType": "null"
   },
   {
     "name": "object",
-    "description": "<code>object</code> declares <a href=\"https://kotlinlang.org/docs/object-declarations.html\">a class and its instance at the same time</a>",
+    "description": "<strong>object</strong> declares <a href=\"https://kotlinlang.org/docs/object-declarations.html\">a class and its instance at the same time</a>",
     "elementType": "object"
   },
   {
     "name": "package",
-    "description": "<code>package</code> specifies the <a href=\"https://kotlinlang.org/docs/packages.html\">package for the current file</a>",
+    "description": "<strong>package</strong> specifies the <a href=\"https://kotlinlang.org/docs/packages.html\">package for the current file</a>",
     "elementType": "package"
   },
   {
     "name": "return",
-    "description": "<code>return</code> <a href=\"https://kotlinlang.org/docs/returns.html\">returns from the nearest enclosing function or anonymous function</a>",
+    "description": "<strong>return</strong> <a href=\"https://kotlinlang.org/docs/returns.html\">returns from the nearest enclosing function or anonymous function</a>",
     "elementType": "return"
   },
   {
     "name": "super",
-    "description": "<code>super</code>",
+    "description": "<strong>super</strong>",
     "elementType": "super"
   },
   {
     "name": "this",
-    "description": "<code>this</code>",
+    "description": "<strong>this</strong>",
     "elementType": "this"
   },
   {
     "name": "throw",
-    "description": "<code>throw</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">throws an exception</a>",
+    "description": "<strong>throw</strong> <a href=\"https://kotlinlang.org/docs/exceptions.html\">throws an exception</a>",
     "elementType": "throw"
   },
   {
     "name": "true",
-    "description": "<code>true</code> specifies the 'true' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "description": "<strong>true</strong> specifies the 'true' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
     "elementType": "true"
   },
   {
     "name": "try",
-    "description": "<code>try</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">begins an exception handling block</a>",
+    "description": "<strong>try</strong> <a href=\"https://kotlinlang.org/docs/exceptions.html\">begins an exception handling block</a>",
     "elementType": "try"
   },
   {
     "name": "typealias",
-    "description": "<code>typealias</code> declares a <a href=\"https://kotlinlang.org/docs/type-aliases.html\">type alias</a>",
+    "description": "<strong>typealias</strong> declares a <a href=\"https://kotlinlang.org/docs/type-aliases.html\">type alias</a>",
     "elementType": "typealias"
   },
   {
     "name": "typeof",
-    "description": "<code>typeof</code> reserved for future use",
+    "description": "<strong>typeof</strong> reserved for future use",
     "elementType": "typeof"
   },
   {
     "name": "val",
-    "description": "<code>val</code> declares a read-only <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "description": "<strong>val</strong> declares a read-only <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
     "elementType": "val"
   },
   {
     "name": "var",
-    "description": "<code>var</code> declares a mutable <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "description": "<strong>var</strong> declares a mutable <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
     "elementType": "var"
   },
   {
     "name": "when",
-    "description": "<code>when</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#when-expression\">when expression</a> (executes one of the given branches)",
+    "description": "<strong>when</strong> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#when-expression\">when expression</a> (executes one of the given branches)",
     "elementType": "when"
   },
   {
     "name": "while",
-    "description": "<code>while</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">while loop</a> (loop with precondition)",
+    "description": "<strong>while</strong> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">while loop</a> (loop with precondition)",
     "elementType": "while"
   },
   {
     "name": "by",
-    "description": "<code>by</code>",
-    "elementType": "by"
+    "description": "<strong>by</strong> <a href=\"https://kotlinlang.org/docs/delegation.html\">delegates the implementation of an interface to another object</a>",
+    "elementType": "by",
+    "parentType": "DELEGATE_SUPER_TYPE_ENTRY"
+  },
+  {
+    "name": "by",
+    "description": "<strong>by</strong> <a href=\"https://kotlinlang.org/docs/delegated-properties.html\">delegates the implementation of accessors for a property to another object</a>",
+    "elementType": "by",
+    "parentType": "PROPERTY_DELEGATE"
   },
   {
     "name": "catch",
-    "description": "<code>catch</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">handles a specific exception type</a>",
+    "description": "<strong>catch</strong> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">handles a specific exception type</a>",
     "elementType": "catch"
   },
   {
     "name": "constructor",
-    "description": "<code>constructor</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">primary or secondary constructor</a>",
+    "description": "<strong>constructor</strong> declares a <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">primary or secondary constructor</a>",
     "elementType": "constructor"
   },
   {
     "name": "delegate",
-    "description": "<code>delegate</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>delegate</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "delegate"
   },
   {
     "name": "dynamic",
-    "description": "<code>dynamic</code> references a <a href=\"https://kotlinlang.org/docs/dynamic-type.html\">dynamic type</a> in Kotlin/JS code",
+    "description": "<strong>dynamic</strong> references a <a href=\"https://kotlinlang.org/docs/dynamic-type.html\">dynamic type</a> in Kotlin/JS code",
     "elementType": "dynamic"
   },
   {
     "name": "field",
-    "description": "<code>field</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>field</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "field"
   },
   {
     "name": "file",
-    "description": "<code>file</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>file</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "file"
   },
   {
     "name": "finally",
-    "description": "<code>finally</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">is always executed when a try block exits</a>",
+    "description": "<strong>finally</strong> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">is always executed when a try block exits</a>",
     "elementType": "finally"
   },
   {
     "name": "get",
-    "description": "<code>get</code>",
-    "elementType": "get"
+    "description": "<strong>get</strong> declares the <a href=\"https://kotlinlang.org/docs/properties.html#getters-and-setters\">getter of a property</a>",
+    "elementType": "get",
+    "parentType": "PROPERTY_ACCESSOR"
+  },
+  {
+    "name": "get",
+    "description": "<strong>get</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "get",
+    "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "import",
-    "description": "<code>import</code> <a href=\"https://kotlinlang.org/docs/packages.html\">imports a declaration from another package into the current file</a>",
+    "description": "<strong>import</strong> <a href=\"https://kotlinlang.org/docs/packages.html\">imports a declaration from another package into the current file</a>",
     "elementType": "import"
   },
   {
     "name": "init",
-    "description": "<code>init</code> begins an <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">initializer block</a>",
+    "description": "<strong>init</strong> begins an <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">initializer block</a>",
     "elementType": "init"
   },
   {
     "name": "param",
-    "description": "<code>param</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>param</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "param"
   },
   {
     "name": "property",
-    "description": "<code>property</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>property</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "property"
   },
   {
     "name": "receiver",
-    "description": "<code>receiver</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>receiver</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "receiver"
   },
   {
     "name": "set",
-    "description": "<code>set</code>",
-    "elementType": "set"
+    "description": "<strong>set</strong> declares the <a href=\"https://kotlinlang.org/docs/properties.html#getters-and-setters\">setter of a property</a>",
+    "elementType": "set",
+    "parentType": "PROPERTY_ACCESSOR"
+  },
+  {
+    "name": "set",
+    "description": "<strong>set</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "elementType": "set",
+    "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "setparam",
-    "description": "<code>setparam</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "description": "<strong>setparam</strong> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "setparam"
   },
   {
     "name": "class",
-    "description": "<code>value</code> with the <code>class</code> keyword declares an <a href=\"https://kotlinlang.org/docs/inline-classes.html\">inline class</a>",
+    "description": "<strong>value</strong> with the <strong>class</strong> keyword declares an <a href=\"https://kotlinlang.org/docs/inline-classes.html\">inline class</a>",
     "elementType": "class"
   },
   {
     "name": "where",
-    "description": "<code>where</code> specifies <a href=\"https://kotlinlang.org/docs/generics.html#upper-bounds\">constraints for a generic type parameter</a>",
+    "description": "<strong>where</strong> specifies <a href=\"https://kotlinlang.org/docs/generics.html#upper-bounds\">constraints for a generic type parameter</a>",
     "elementType": "where"
   },
   {
     "name": "actual",
-    "description": "<code>actual</code> denotes a platform-specific implementation in <a href=\"https://kotlinlang.org/docs/multiplatform.html\">multiplatform projects</a>",
+    "description": "<strong>actual</strong> denotes a platform-specific implementation in <a href=\"https://kotlinlang.org/docs/multiplatform.html\">multiplatform projects</a>",
     "elementType": "actual"
   },
   {
     "name": "abstract",
-    "description": "<code>abstract</code> marks a class or member as <a href=\"https://kotlinlang.org/docs/classes.html#abstract-classes\">abstract</a>",
+    "description": "<strong>abstract</strong> marks a class or member as <a href=\"https://kotlinlang.org/docs/classes.html#abstract-classes\">abstract</a>",
     "elementType": "abstract"
   },
   {
     "name": "annotation",
-    "description": "<code>annotation</code> declares an <a href=\"https://kotlinlang.org/docs/annotations.html\">annotation class</a>",
+    "description": "<strong>annotation</strong> declares an <a href=\"https://kotlinlang.org/docs/annotations.html\">annotation class</a>",
     "elementType": "annotation"
   },
   {
     "name": "companion",
-    "description": "<code>companion</code> declares a <a href=\"https://kotlinlang.org/docs/object-declarations.html#companion-objects\">companion object</a>",
+    "description": "<strong>companion</strong> declares a <a href=\"https://kotlinlang.org/docs/object-declarations.html#companion-objects\">companion object</a>",
     "elementType": "companion"
   },
   {
     "name": "const",
-    "description": "<code>const</code> marks a property as a <a href=\"https://kotlinlang.org/docs/properties.html#compile-time-constants\">compile-time constant</a>",
+    "description": "<strong>const</strong> marks a property as a <a href=\"https://kotlinlang.org/docs/properties.html#compile-time-constants\">compile-time constant</a>",
     "elementType": "const"
   },
   {
     "name": "crossinline",
-    "description": "<code>crossinline</code> forbids <a href=\"https://kotlinlang.org/docs/inline-functions.html#non-local-returns\">non-local returns in a lambda passed to an inline function</a>",
+    "description": "<strong>crossinline</strong> forbids <a href=\"https://kotlinlang.org/docs/inline-functions.html#non-local-returns\">non-local returns in a lambda passed to an inline function</a>",
     "elementType": "crossinline"
   },
   {
     "name": "data",
-    "description": "<code>data</code> instructs the compiler to <a href=\"https://kotlinlang.org/docs/data-classes.html\">generate canonical members for a class</a>",
+    "description": "<strong>data</strong> instructs the compiler to <a href=\"https://kotlinlang.org/docs/data-classes.html\">generate canonical members for a class</a>",
     "elementType": "data"
   },
   {
     "name": "enum",
-    "description": "<code>enum</code> declares an <a href=\"https://kotlinlang.org/docs/enum-classes.html\">enumeration</a>",
+    "description": "<strong>enum</strong> declares an <a href=\"https://kotlinlang.org/docs/enum-classes.html\">enumeration</a>",
     "elementType": "enum"
   },
   {
     "name": "expect",
-    "description": "<code>expect</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/multiplatform.html\">platform-specific</a>, expecting an implementation in platform modules.",
+    "description": "<strong>expect</strong> marks a declaration as <a href=\"https://kotlinlang.org/docs/multiplatform.html\">platform-specific</a>, expecting an implementation in platform modules.",
     "elementType": "expect"
   },
   {
     "name": "external",
-    "description": "<code>external</code> marks a declaration as implemented not in Kotlin (accessible through <a href=\"https://kotlinlang.org/docs/java-interop.html#using-jni-with-kotlin\">JNI</a> or in <a href=\"https://kotlinlang.org/docs/js-interop.html#external-modifier\">JavaScript</a>)",
+    "description": "<strong>external</strong> marks a declaration as implemented not in Kotlin (accessible through <a href=\"https://kotlinlang.org/docs/java-interop.html#using-jni-with-kotlin\">JNI</a> or in <a href=\"https://kotlinlang.org/docs/js-interop.html#external-modifier\">JavaScript</a>)",
     "elementType": "external"
   },
   {
     "name": "final",
-    "description": "<code>final</code> forbids <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">overriding a member</a>",
+    "description": "<strong>final</strong> forbids <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">overriding a member</a>",
     "elementType": "final"
   },
   {
     "name": "infix",
-    "description": "<code>infix</code> allows calling a function in <a href=\"https://kotlinlang.org/docs/functions.html#infix-notation\">infix notation</a>",
+    "description": "<strong>infix</strong> allows calling a function in <a href=\"https://kotlinlang.org/docs/functions.html#infix-notation\">infix notation</a>",
     "elementType": "infix"
   },
   {
     "name": "inline",
-    "description": "<code>inline</code> tells the compiler to <a href=\"https://kotlinlang.org/docs/inline-functions.html\">inline the function and the lambdas passed to it at the call site</a>",
+    "description": "<strong>inline</strong> tells the compiler to <a href=\"https://kotlinlang.org/docs/inline-functions.html\">inline the function and the lambdas passed to it at the call site</a>",
     "elementType": "inline"
   },
   {
     "name": "inner",
-    "description": "<code>inner</code> allows referring to the outer class instance from a <a href=\"https://kotlinlang.org/docs/nested-classes.html\">nested class</a>",
+    "description": "<strong>inner</strong> allows referring to the outer class instance from a <a href=\"https://kotlinlang.org/docs/nested-classes.html\">nested class</a>",
     "elementType": "inner"
   },
   {
     "name": "internal",
-    "description": "<code>internal</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current module</a>",
+    "description": "<strong>internal</strong> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current module</a>",
     "elementType": "internal"
   },
   {
     "name": "lateinit",
-    "description": "<code>lateinit</code> allows initializing a <a href=\"https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables\">non-null property outside of a constructor</a>",
+    "description": "<strong>lateinit</strong> allows initializing a <a href=\"https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables\">non-null property outside of a constructor</a>",
     "elementType": "lateinit"
   },
   {
     "name": "noinline",
-    "description": "<code>noinline</code> turns off <a href=\"https://kotlinlang.org/docs/inline-functions.html#noinline\">inlining of a lambda passed to an inline function</a>",
+    "description": "<strong>noinline</strong> turns off <a href=\"https://kotlinlang.org/docs/inline-functions.html#noinline\">inlining of a lambda passed to an inline function</a>",
     "elementType": "noinline"
   },
   {
     "name": "open",
-    "description": "<code>open</code> allows <a href=\"https://kotlinlang.org/docs/classes.html#inheritance\">subclassing a class or overriding a member</a>",
+    "description": "<strong>open</strong> allows <a href=\"https://kotlinlang.org/docs/classes.html#inheritance\">subclassing a class or overriding a member</a>",
     "elementType": "open"
   },
   {
     "name": "operator",
-    "description": "<code>operator</code> marks a function as <a href=\"https://kotlinlang.org/docs/operator-overloading.html\">overloading an operator or implementing a convention</a>",
+    "description": "<strong>operator</strong> marks a function as <a href=\"https://kotlinlang.org/docs/operator-overloading.html\">overloading an operator or implementing a convention</a>",
     "elementType": "operator"
   },
   {
     "name": "out",
-    "description": "<code>out</code> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">covariant</a>",
+    "description": "<strong>out</strong> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">covariant</a>",
     "elementType": "out"
   },
   {
     "name": "override",
-    "description": "<code>override</code> marks a member as an <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">override of a superclass member</a>",
+    "description": "<strong>override</strong> marks a member as an <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">override of a superclass member</a>",
     "elementType": "override"
   },
   {
     "name": "private",
-    "description": "<code>private</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class or file</a>",
+    "description": "<strong>private</strong> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class or file</a>",
     "elementType": "private"
   },
   {
     "name": "protected",
-    "description": "<code>protected</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class and its subclasses</a>",
+    "description": "<strong>protected</strong> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class and its subclasses</a>",
     "elementType": "protected"
   },
   {
     "name": "public",
-    "description": "<code>public</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible anywhere</a>",
+    "description": "<strong>public</strong> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible anywhere</a>",
     "elementType": "public"
   },
   {
     "name": "reified",
-    "description": "<code>reified</code> marks a type parameter of an inline function as <a href=\"https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters\">accessible at runtime</a>",
+    "description": "<strong>reified</strong> marks a type parameter of an inline function as <a href=\"https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters\">accessible at runtime</a>",
     "elementType": "reified"
   },
   {
     "name": "sealed",
-    "description": "<code>sealed</code> declares a <a href=\"https://kotlinlang.org/docs/sealed-classes.html\">sealed class</a> (a class with restricted subclassing)",
+    "description": "<strong>sealed</strong> declares a <a href=\"https://kotlinlang.org/docs/sealed-classes.html\">sealed class</a> (a class with restricted subclassing)",
     "elementType": "sealed"
   },
   {
     "name": "suspend",
-    "description": "<code>suspend</code> marks a function or lambda as suspending (usable as a <a href=\"https://kotlinlang.org/docs/coroutines-overview.html\">coroutine</a>)",
+    "description": "<strong>suspend</strong> marks a function or lambda as suspending (usable as a <a href=\"https://kotlinlang.org/docs/coroutines-overview.html\">coroutine</a>)",
     "elementType": "suspend"
   },
   {
     "name": "tailrec",
-    "description": "<code>tailrec</code> marks a function as <a href=\"https://kotlinlang.org/docs/functions.html#tail-recursive-functions\">tail-recursive</a> (allowing the compiler to replace recursion with iteration)",
+    "description": "<strong>tailrec</strong> marks a function as <a href=\"https://kotlinlang.org/docs/functions.html#tail-recursive-functions\">tail-recursive</a> (allowing the compiler to replace recursion with iteration)",
     "elementType": "tailrec"
   },
   {
     "name": "vararg",
-    "description": "<code>vararg</code> allows <a href=\"https://kotlinlang.org/docs/functions.html#variable-number-of-arguments-varargs\">passing a variable number of arguments for a parameter</a>",
+    "description": "<strong>vararg</strong> allows <a href=\"https://kotlinlang.org/docs/functions.html#variable-number-of-arguments-varargs\">passing a variable number of arguments for a parameter</a>",
     "elementType": "vararg"
   }
 ]
