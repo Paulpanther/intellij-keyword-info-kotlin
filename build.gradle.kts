@@ -32,8 +32,8 @@ intellij {
 }
 
 changelog {
-    unreleasedTerm = "next"
     version = properties("pluginVersion")
+    groups = emptyList()
 }
 
 tasks {
