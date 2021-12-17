@@ -1,6 +1,13 @@
 # Changelog
 
 ## [Unreleased]
+## [1.0.1]
+## [1.0.1]
+## [1.0.1]
+## [1.0.1]
+## [1.0.1]
+## [1.0.1]
+## [1.0.1]
 ## [1.0.0]
 ### Added
 - Info for Hover and <code>Ctrl-Q</code>
