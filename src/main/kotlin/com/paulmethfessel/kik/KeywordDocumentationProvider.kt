@@ -15,9 +15,17 @@ class KeywordDocumentationProvider: DocumentationProvider {
         b.append(DocumentationMarkup.DEFINITION_START)
         b.append(keyword.name)
         b.append(DocumentationMarkup.DEFINITION_END)
+
         b.append(DocumentationMarkup.CONTENT_START)
         b.append(keyword.description)
         b.append(DocumentationMarkup.CONTENT_END)
+
+        if (keyword.example != null) {
+            b.append(DocumentationMarkup.CONTENT_START)
+            b.append("Example: ")
+            b.append("<pre><code>${keyword.example}</code></pre>")
+            b.append(DocumentationMarkup.CONTENT_END)
+        }
         return b.toString()
     }
 

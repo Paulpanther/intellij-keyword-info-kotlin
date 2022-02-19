@@ -1,13 +1,9 @@
 # Changelog
 
 ## [Unreleased]
-## [1.0.1]
-## [1.0.1]
-## [1.0.1]
-## [1.0.1]
-## [1.0.1]
-## [1.0.1]
-## [1.0.1]
+## [1.1.0]
+### Added
+- Examples for keywords
 ## [1.0.0]
 ### Added
 - Info for Hover and <code>Ctrl-Q</code>

@@ -7,7 +7,7 @@ import com.intellij.openapi.components.Service
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
-data class Keyword(val name: String, val description: String, val elementType: String?, val parentType: String?)
+data class Keyword(val name: String, val description: String, val example: String?, val elementType: String?, val parentType: String?)
 
 @Service
 class KeywordService {

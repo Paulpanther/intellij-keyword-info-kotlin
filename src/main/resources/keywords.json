@@ -2,151 +2,180 @@
   {
     "name": "as",
     "description": "<code>as</code> specifies an <a href=\"https://kotlinlang.org/docs/packages.html#imports\">alias for an import</a>",
+    "example": "import com.intellij.psi.PsiFile as PF",
     "elementType": "as",
     "parentType": "IMPORT_ALIAS"
   },
   {
     "name": "as",
     "description": "<code>as</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#unsafe-cast-operator\">type casts</a>",
+    "example": "val bla = \"Hello\" as CharSequence",
     "elementType": "as",
     "parentType": "OPERATION_REFERENCE"
   },
   {
     "name": "as?",
     "description": "<code>as?</code> is used for <a href=\"https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator\">safe type casts</a>",
+    "example": "\"Hello\" as? Int == null",
     "elementType": "AS_SAFE"
   },
   {
     "name": "break",
     "description": "<code>break</code> <a href=\"https://kotlinlang.org/docs/returns.html\">terminates the execution of a loop</a>",
+    "example": "for (item in array) {\n  if (item.final) {\n    break  // Terminate loop\n  }\n}",
     "elementType": "break"
   },
   {
     "name": "class",
     "description": "<code>class</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html\">class</a>",
+    "example": "class Foo {\n  fun bar() {\n    println(\"Hello World\")\n  }\n}",
     "elementType": "class"
   },
   {
     "name": "continue",
     "description": "<code>continue</code> <a href=\"https://kotlinlang.org/docs/returns.html\">proceeds to the next step of the nearest enclosing loop</a>",
+    "example": "for (item in array) {\n  if (item.skip) {\n    continue  // Skip this iteration\n  }\n}",
     "elementType": "continue"
   },
   {
     "name": "do",
     "description": "<code>do</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">do/while loop</a> (loop with postcondition)",
+    "example": "var i = 0\ndo {\n  i++\n} while (i &lt; 8)",
     "elementType": "do"
   },
   {
     "name": "else",
     "description": "<code>else</code> defines the branch of an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a> which is executed when the condition is false",
+    "example": "if (i &lt; 5) {\n  println(\"i is smaller than 5\")\n} else {\n  println(\"i is greater or equal to 5\")\n}",
     "elementType": "else"
   },
   {
     "name": "false",
     "description": "<code>false</code> specifies the 'false' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "example": "5 &lt; 2 == false",
     "elementType": "false"
   },
   {
     "name": "for",
     "description": "<code>for</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
+    "example": "for (i in 0 .. 3) {\n  println(i)  // 0 1 2 3\n}",
     "elementType": "for"
   },
   {
     "name": "fun",
     "description": "<code>fun</code> declares a <a href=\"https://kotlinlang.org/docs/functions.html\">function</a>",
+    "example": "fun main() {\n  println(\"Hello World\")\n}",
     "elementType": "fun"
   },
   {
     "name": "if",
     "description": "<code>if</code> begins an <a href=\"https://kotlinlang.org/docs/control-flow.html#if-expression\">if expression</a>",
+    "example": "if (i &lt; 5) {\n  println(\"i is smaller than 5\")\n} else {\n  println(\"i is greater or equal to 5\")\n}",
     "elementType": "if"
   },
   {
     "name": "in",
     "description": "<code>in</code> specifies the object being iterated in a <a href=\"https://kotlinlang.org/docs/control-flow.html#for-loops\">for loop</a>",
+    "example": "for (item in array) {\n  println(item)\n}",
     "elementType": "in",
     "parentType": "FOR"
   },
   {
     "name": "in",
     "description": "<code>in</code> is used as an infix operator to check that a value belongs to <a href=\"https://kotlinlang.org/docs/ranges.html\">a range</a>, a collection or another entity that <a href=\"https://kotlinlang.org/docs/operator-overloading.html#in-operator\">defines the 'contains' method</a>",
+    "example": "println(\"foo\" in listOf(\"foo\", \"bar\"))  // true",
     "elementType": "in",
     "parentType": "OPERATION_REFERENCE"
   },
   {
     "name": "in",
     "description": "<code>in</code> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">contravariant</a>",
+    "example": "interface Comparable&lt;in T> {\n  operator fun compareTo(other: T): Int\n}",
     "elementType": "in",
     "parentType": "MODIFIER_LIST"
   },
   {
     "name": "!in",
     "description": "<code>!in</code> is used as an operator to check that a value does NOT belong to <a href=\"https://kotlinlang.org/docs/ranges.html\">a range</a>, a collection or another entity that <a href=\"https://kotlinlang.org/docs/operator-overloading.html#in-operator\">defines the 'contains' method</a>",
+    "example": "println(\"hey\" !in listOf(\"foo\", \"bar\"))  // true",
     "elementType": "NOT_IN"
   },
   {
     "name": "interface",
     "description": "<code>interface</code> declares an <a href=\"https://kotlinlang.org/docs/interfaces.html\">interface</a>",
+    "example": "interface Foo {\n  fun bar(): String\n}",
     "elementType": "interface"
   },
   {
     "name": "is",
     "description": "<code>is</code> checks that <a href=\"https://kotlinlang.org/docs/typecasts.html#is-and-is-operators\">a value has a certain type</a>",
+    "example": "val foo = \"Hello\"\nprintln(foo is String)  // true",
     "elementType": "is"
   },
   {
     "name": "!is",
     "description": "<code>!is</code> checks that <a href=\"https://kotlinlang.org/docs/typecasts.html#is-and-is-operators\">a value does NOT have a certain type</a>",
+    "example": "val foo = \"Hello\"\nprintln(foo !is Int)  // true",
     "elementType": "NOT_IS"
   },
   {
     "name": "null",
     "description": "<code>null</code> is a constant representing an object reference that doesn't point to any object",
+    "example": "val foo: String? = null\nprintln(foo == null)  // true",
     "elementType": "null"
   },
   {
     "name": "object",
     "description": "<code>object</code> declares <a href=\"https://kotlinlang.org/docs/object-declarations.html\">a class and its instance at the same time</a>",
+    "example": "object Foo {\n  fun hey() = \"This is a method of a singleton class\"\n}\nwindow.addListener(object: MouseHandler() {\n  override fun mouseClicked(e: MouseEvent) { ... }\n})",
     "elementType": "object"
   },
   {
     "name": "package",
     "description": "<code>package</code> specifies the <a href=\"https://kotlinlang.org/docs/packages.html\">package for the current file</a>",
+    "example": "package com.intellij.lang.documentation",
     "elementType": "package"
   },
   {
     "name": "return",
     "description": "<code>return</code> <a href=\"https://kotlinlang.org/docs/returns.html\">returns from the nearest enclosing function or anonymous function</a>",
+    "example": "fun foo(): String {\n  return \"Hello World\"\n}",
     "elementType": "return"
   },
   {
     "name": "super",
     "description": "<code>super</code> <a href=\"https://kotlinlang.org/docs/inheritance.html#calling-the-superclass-implementation\">refers to the superclass implementation of a method or property</a> or <a href=\"https://kotlinlang.org/docs/classes.html#inheritance\">calls the superclass constructor from a secondary constructor</a>",
+    "example": "interface Bar { fun bla() = 4 }\nclass Foo: Bar {\n  override fun bla() = super.bla() + 2\n}",
     "elementType": "super"
   },
   {
     "name": "this",
     "description": "<code>this</code> refers to <a href=\"https://kotlinlang.org/docs/this-expressions.html\">the current receiver</a> or <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">calls another constructor of the same class from a secondary constructor</a>",
+    "example": "class Foo {\n  val bar = 0\n  fun dum(bar: Int) {\n    this.bar += bar\n  }\n}",
     "elementType": "this"
   },
   {
     "name": "throw",
     "description": "<code>throw</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">throws an exception</a>",
+    "example": "throw IllegalArgumentException(\"You cannot do this here\")",
     "elementType": "throw"
   },
   {
     "name": "true",
     "description": "<code>true</code> specifies the 'true' value of the <a href=\"https://kotlinlang.org/docs/basic-types.html#booleans\">Boolean type</a>",
+    "example": "5 > 2 == true",
     "elementType": "true"
   },
   {
     "name": "try",
     "description": "<code>try</code> <a href=\"https://kotlinlang.org/docs/exceptions.html\">begins an exception handling block</a>",
+    "example": "try {\n  doDangerousStuff()\n} catch (e: Exception) {\n  println(\"Error\")\n}",
     "elementType": "try"
   },
   {
     "name": "typealias",
     "description": "<code>typealias</code> declares a <a href=\"https://kotlinlang.org/docs/type-aliases.html\">type alias</a>",
+    "example": "typealias Action&lt;T> = (msg: String) -> T",
     "elementType": "typealias"
   },
   {
@@ -157,73 +186,87 @@
   {
     "name": "val",
     "description": "<code>val</code> declares a read-only <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "example": "val foo = \"Hello World\"\nfoo = \"Something else\"  // Error: foo is read-only",
     "elementType": "val"
   },
   {
     "name": "var",
     "description": "<code>var</code> declares a mutable <a href=\"https://kotlinlang.org/docs/properties.html\">property</a> or <a href=\"https://kotlinlang.org/docs/basic-syntax.html#variables\">local variable</a>",
+    "example": "var foo = \"Hello World\"\nfoo = \"Something else\"",
     "elementType": "var"
   },
   {
     "name": "when",
     "description": "<code>when</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#when-expression\">when expression</a> (executes one of the given branches)",
+    "example": "when (10) {\n  in listOf(10, 2) -> \"in 10\"\n  is Double -> getSomeValue()\n  else -> getSomeOtherValue()\n}",
     "elementType": "when"
   },
   {
     "name": "while",
     "description": "<code>while</code> begins a <a href=\"https://kotlinlang.org/docs/control-flow.html#while-loops\">while loop</a> (loop with precondition)",
+    "example": "var i = 0\nwhile (i &lt; 3) {\n  i++\n}",
     "elementType": "while"
   },
   {
     "name": "by",
     "description": "<code>by</code> <a href=\"https://kotlinlang.org/docs/delegation.html\">delegates the implementation of an interface to another object</a>",
+    "example": "class Foo(val values: List<Int>): List<Int> by values",
     "elementType": "by",
     "parentType": "DELEGATED_SUPER_TYPE_ENTRY"
   },
   {
     "name": "by",
     "description": "<code>by</code> <a href=\"https://kotlinlang.org/docs/delegated-properties.html\">delegates the implementation of accessors for a property to another object</a>",
+    "example": "val count by lazy { countItems() }",
     "elementType": "by",
     "parentType": "PROPERTY_DELEGATE"
   },
   {
     "name": "catch",
     "description": "<code>catch</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">handles a specific exception type</a>",
+    "example": "try {\n  doDangerousStuff()\n} catch (e: IOException) {\n  println(\"IO Error\")\n}",
     "elementType": "catch"
   },
   {
     "name": "constructor",
     "description": "<code>constructor</code> declares a <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">primary or secondary constructor</a>",
+    "example": "class Foo(value: Int) {\n  constructor(strValue: String): this(strValue.toInt())\n}",
     "elementType": "constructor"
   },
   {
     "name": "delegate",
     "description": "<code>delegate</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "@delegate:Foo\nval foo by lazy { 42 }",
     "elementType": "delegate"
   },
   {
     "name": "dynamic",
     "description": "<code>dynamic</code> references a <a href=\"https://kotlinlang.org/docs/dynamic-type.html\">dynamic type</a> in Kotlin/JS code",
+    "example": "val bla: dynamic = doSomething()  // Type-Checker is turned off (JavaScript)",
     "elementType": "dynamic"
   },
   {
     "name": "field",
     "description": "<code>field</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "@field:Foo\nval bla = 42",
     "elementType": "field"
   },
   {
     "name": "file",
     "description": "<code>file</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "@file:JvmName(\"Example\")  // Names the file",
     "elementType": "file"
   },
   {
     "name": "finally",
     "description": "<code>finally</code> begins a block that <a href=\"https://kotlinlang.org/docs/exceptions.html\">is always executed when a try block exits</a>",
+    "example": "try {\n  doDangerousStuff()\n} catch (e: IOException) {\n  println(\"IO Error\")\n} finally {\n  println(\"This will always be called\")\n}",
     "elementType": "finally"
   },
   {
     "name": "get",
     "description": "<code>get</code> declares the <a href=\"https://kotlinlang.org/docs/properties.html#getters-and-setters\">getter of a property</a>",
+    "example": "val value get() = 40 + 2",
     "elementType": "get",
     "parentType": "PROPERTY_ACCESSOR"
   },
@@ -231,36 +274,43 @@
     "name": "get",
     "description": "<code>get</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "get",
+    "example": "@get:Foo\nval foo get() = 42",
     "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "import",
     "description": "<code>import</code> <a href=\"https://kotlinlang.org/docs/packages.html\">imports a declaration from another package into the current file</a>",
+    "example": "import org.jetbrains.kotlin.idea.KotlinLanguage",
     "elementType": "import"
   },
   {
     "name": "init",
     "description": "<code>init</code> begins an <a href=\"https://kotlinlang.org/docs/classes.html#constructors\">initializer block</a>",
+    "example": "class Foo {\n  val bla: String\n  init {\n    bla = \"Hello World\"\n  }\n}",
     "elementType": "init"
   },
   {
     "name": "param",
     "description": "<code>param</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "@param:Foo\nval foo = 0  // Annotates param in constructor",
     "elementType": "param"
   },
   {
     "name": "property",
     "description": "<code>property</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example":"@property:Foo\nval foo = 0  // Not visible in Java",
     "elementType": "property"
   },
   {
     "name": "receiver",
     "description": "<code>receiver</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "fun @receiver:Foo String.bar() = 42",
     "elementType": "receiver"
   },
   {
     "name": "set",
     "description": "<code>set</code> declares the <a href=\"https://kotlinlang.org/docs/properties.html#getters-and-setters\">setter of a property</a>",
+    "example": "var text: String = \"\"\n  set(value) { field = value + \" World\" }",
     "elementType": "set",
     "parentType": "PROPERTY_ACCESSOR"
   },
@@ -268,166 +318,199 @@
     "name": "set",
     "description": "<code>set</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
     "elementType": "set",
+    "example": "@set:Foo\nvar foo: Int = 0 set(value) { field = value + 1 }",
     "parentType": "ANNOTATION_TARGET"
   },
   {
     "name": "setparam",
     "description": "<code>setparam</code> is used as an <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">annotation use-site target</a>",
+    "example": "@setparam:Foo\nvar foo: Int = 0 set(value) { field = value + 1 }",
     "elementType": "setparam"
   },
   {
     "name": "value",
     "description": "<code>value</code> with the <code>class</code> keyword declares an <a href=\"https://kotlinlang.org/docs/inline-classes.html\">inline class</a>",
+    "example": "@JvmInline\nvalue class UInt(val x: Int)",
     "elementType": "value"
   },
   {
     "name": "where",
     "description": "<code>where</code> specifies <a href=\"https://kotlinlang.org/docs/generics.html#upper-bounds\">constraints for a generic type parameter</a>",
+    "example": "external fun &lt;T> bla(a: T): Int where T: CharSequence, T: Comparable&lt;T>",
     "elementType": "where"
   },
   {
     "name": "actual",
     "description": "<code>actual</code> denotes a platform-specific implementation in <a href=\"https://kotlinlang.org/docs/multiplatform.html\">multiplatform projects</a>",
+    "example": "actual fun bla() = 42  // Implementation for: expect fun bla(): Int",
     "elementType": "actual"
   },
   {
     "name": "abstract",
     "description": "<code>abstract</code> marks a class or member as <a href=\"https://kotlinlang.org/docs/classes.html#abstract-classes\">abstract</a>",
+    "example": "abstract class Foo {\n  abstract fun doSomething(): Int\n}",
     "elementType": "abstract"
   },
   {
     "name": "annotation",
     "description": "<code>annotation</code> declares an <a href=\"https://kotlinlang.org/docs/annotations.html\">annotation class</a>",
+    "example": "annotation class Foo(val param: String)",
     "elementType": "annotation"
   },
   {
     "name": "companion",
     "description": "<code>companion</code> declares a <a href=\"https://kotlinlang.org/docs/object-declarations.html#companion-objects\">companion object</a>",
+    "example": "class Foo {\n  companion object {\n    fun create() = Foo()\n  }\n}",
     "elementType": "companion"
   },
   {
     "name": "const",
     "description": "<code>const</code> marks a property as a <a href=\"https://kotlinlang.org/docs/properties.html#compile-time-constants\">compile-time constant</a>",
+    "example": "const val bla = \"Hello World\"",
     "elementType": "const"
   },
   {
     "name": "crossinline",
     "description": "<code>crossinline</code> forbids <a href=\"https://kotlinlang.org/docs/inline-functions.html#non-local-returns\">non-local returns in a lambda passed to an inline function</a>",
+    "example": "inline fun bla(crossinline a: () -> Unit) = a()",
     "elementType": "crossinline"
   },
   {
     "name": "data",
     "description": "<code>data</code> instructs the compiler to <a href=\"https://kotlinlang.org/docs/data-classes.html\">generate canonical members for a class</a>",
+    "example": "data class Foo(val i: Int, val t: String)",
     "elementType": "data"
   },
   {
     "name": "enum",
     "description": "<code>enum</code> declares an <a href=\"https://kotlinlang.org/docs/enum-classes.html\">enumeration</a>",
+    "example": "enum class Foo {\n  Type_1, Type_2\n}",
     "elementType": "enum"
   },
   {
     "name": "expect",
     "description": "<code>expect</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/multiplatform.html\">platform-specific</a>, expecting an implementation in platform modules.",
+    "example": "expect fun bla(): Int  // Implementation: actual fun bla() = 42",
     "elementType": "expect"
   },
   {
     "name": "external",
     "description": "<code>external</code> marks a declaration as implemented not in Kotlin (accessible through <a href=\"https://kotlinlang.org/docs/java-interop.html#using-jni-with-kotlin\">JNI</a> or in <a href=\"https://kotlinlang.org/docs/js-interop.html#external-modifier\">JavaScript</a>)",
+    "example": "external fun bla(): Int",
     "elementType": "external"
   },
   {
     "name": "final",
     "description": "<code>final</code> forbids <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">overriding a member</a>",
+    "example": "class Foo : Bar {\n  final override fun click() = \"Hello\"\n}",
     "elementType": "final"
   },
   {
     "name": "infix",
     "description": "<code>infix</code> allows calling a function in <a href=\"https://kotlinlang.org/docs/functions.html#infix-notation\">infix notation</a>",
+    "example": "infix fun add(a: Int, b: Int) = a + b",
     "elementType": "infix"
   },
   {
     "name": "inline",
     "description": "<code>inline</code> tells the compiler to <a href=\"https://kotlinlang.org/docs/inline-functions.html\">inline the function and the lambdas passed to it at the call site</a>",
+    "example": "inline fun &lt;reified T: Any> foo(a: T) = a::class",
     "elementType": "inline"
   },
   {
     "name": "inner",
     "description": "<code>inner</code> allows referring to the outer class instance from a <a href=\"https://kotlinlang.org/docs/nested-classes.html\">nested class</a>",
+    "example": "class Foo {\n  inner class Bar\n}",
     "elementType": "inner"
   },
   {
     "name": "internal",
     "description": "<code>internal</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current module</a>",
+    "example": "internal val bla = 42",
     "elementType": "internal"
   },
   {
     "name": "lateinit",
     "description": "<code>lateinit</code> allows initializing a <a href=\"https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables\">non-null property outside of a constructor</a>",
+    "example": "lateinit var bla: String",
     "elementType": "lateinit"
   },
   {
     "name": "noinline",
     "description": "<code>noinline</code> turns off <a href=\"https://kotlinlang.org/docs/inline-functions.html#noinline\">inlining of a lambda passed to an inline function</a>",
+    "example": "inline fun bla(noinline a: () -> Unit) = a()",
     "elementType": "noinline"
   },
   {
     "name": "open",
     "description": "<code>open</code> allows <a href=\"https://kotlinlang.org/docs/classes.html#inheritance\">subclassing a class or overriding a member</a>",
+    "example": "open class Foo {}",
     "elementType": "open"
   },
   {
     "name": "operator",
     "description": "<code>operator</code> marks a function as <a href=\"https://kotlinlang.org/docs/operator-overloading.html\">overloading an operator or implementing a convention</a>",
+    "example": "operator fun String.minus(a: Int) = this.toInt() - a",
     "elementType": "operator"
   },
   {
     "name": "out",
     "description": "<code>out</code> marks a type parameter as <a href=\"https://kotlinlang.org/docs/generics.html#declaration-site-variance\">covariant</a>",
+    "example": "interface Source&lt;out T> {\n  fun nextT(): T\n}",
     "elementType": "out"
   },
   {
     "name": "override",
     "description": "<code>override</code> marks a member as an <a href=\"https://kotlinlang.org/docs/inheritance.html#overriding-methods\">override of a superclass member</a>",
+    "example": "override fun bla() = 42",
     "elementType": "override"
   },
   {
     "name": "private",
     "description": "<code>private</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class or file</a>",
+    "example": "private fun bla() = 42",
     "elementType": "private"
   },
   {
     "name": "protected",
     "description": "<code>protected</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible in the current class and its subclasses</a>",
+    "example": "protected fun bla() = 42",
     "elementType": "protected"
   },
   {
     "name": "public",
     "description": "<code>public</code> marks a declaration as <a href=\"https://kotlinlang.org/docs/visibility-modifiers.html\">visible anywhere</a>",
+    "example": "public fun bla() = 42  // Default is public",
     "elementType": "public"
   },
   {
     "name": "reified",
     "description": "<code>reified</code> marks a type parameter of an inline function as <a href=\"https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters\">accessible at runtime</a>",
+    "example": "inline fun &lt;reified T: Any> foo(a: T) = a::class",
     "elementType": "reified"
   },
   {
     "name": "sealed",
     "description": "<code>sealed</code> declares a <a href=\"https://kotlinlang.org/docs/sealed-classes.html\">sealed class</a> (a class with restricted subclassing)",
+    "example": "sealed interface Foo\nclass Bar : Foo",
     "elementType": "sealed"
   },
   {
     "name": "suspend",
     "description": "<code>suspend</code> marks a function or lambda as suspending (usable as a <a href=\"https://kotlinlang.org/docs/coroutines-overview.html\">coroutine</a>)",
+    "example": "suspend fun foo() = doAnotherSuspendTask()",
     "elementType": "suspend"
   },
   {
     "name": "tailrec",
     "description": "<code>tailrec</code> marks a function as <a href=\"https://kotlinlang.org/docs/functions.html#tail-recursive-functions\">tail-recursive</a> (allowing the compiler to replace recursion with iteration)",
+    "example": "tailrec fun foo(a: Int): Int = if (a >= 10) a else foo(a + 1)",
     "elementType": "tailrec"
   },
   {
     "name": "vararg",
     "description": "<code>vararg</code> allows <a href=\"https://kotlinlang.org/docs/functions.html#variable-number-of-arguments-varargs\">passing a variable number of arguments for a parameter</a>",
+    "example": "// sum(1, 2, 3, 4)\nfun sum(vararg a: Int) = a.sum()",
     "elementType": "vararg"
   }
 ]
