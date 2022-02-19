@@ -9,6 +9,8 @@ Show information on hover or <code>Ctrl-Q</code> for Kotlin Keywords.
 Information includes a small description and link to Kotlin Language Reference Webpage
 <!-- Plugin description end -->
 
+![Screenshot](https://raw.githubusercontent.com/Paulpanther/intellij-keyword-info-kotlin/main/images/is.png)
+
 ## Installation
 
 - Using IDE built-in plugin system:
