@@ -5,9 +5,9 @@ fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "1.5.21"
-    id("org.jetbrains.intellij") version "1.0"
-    id("org.jetbrains.changelog") version "1.1.2"
+    id("org.jetbrains.kotlin.jvm") version "1.7.10"
+    id("org.jetbrains.intellij") version "1.7.0"
+    id("org.jetbrains.changelog") version "1.3.1"
 }
 
 group = properties("pluginGroup")
@@ -32,8 +32,14 @@ intellij {
 }
 
 changelog {
-    version = properties("pluginVersion")
-    groups = emptyList()
+    version.set(properties("pluginVersion"))
+    groups.set(emptyList())
+}
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
 }
 
 tasks {
@@ -41,9 +47,6 @@ tasks {
         withType<JavaCompile> {
             sourceCompatibility = it
             targetCompatibility = it
-        }
-        withType<KotlinCompile> {
-            kotlinOptions.jvmTarget = it
         }
     }
 
